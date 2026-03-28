@@ -1,0 +1,458 @@
+@font-face {
+    font-family: 'Bodonitown';
+    src: url('../font/Bodonitown.ttf');
+}
+
+@font-face {
+    font-family: 'IstokWeb-Bold';
+    src: url('../font/IstokWeb-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'IstokWeb-Regular';
+    src: url('../font/IstokWeb-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    color: white;
+}
+
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* naviagtion */
+.navigation button {
+    border: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+.logo {
+    width: 7vw;
+    height: 7vw;
+    background: url(../logo/logo1.jpg) no-repeat center/cover;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    transition: color 1s;
+}
+
+nav {
+    display: flex;
+    gap: 2vw;
+    background: none;
+}
+
+nav a {
+    color: #004eff;
+    font-size: 1.6vw;
+    font-weight: 600;
+    padding: 0.5vw 1vw;
+    margin-top: 4%;
+    background: none;
+    transition: color 0.5s;
+}
+
+/* Main container */
+main {
+    max-width: 90vw;
+    margin: 4vw auto;
+    padding: 0 1vw;
+}
+
+/* Section titles */
+h1,
+h2,
+h3 {
+    font-family: 'IstokWeb-Bold', sans-serif;
+    margin-bottom: 1vw;
+}
+
+h1 {
+    font-size: 3vw;
+    color: #004eff;
+}
+
+
+h2 {
+    font-size: 2.5vw;
+    color: #004eff;
+    margin: 2vw;
+    text-align: center;
+}
+
+h3 {
+    font-size: 3vw;
+    margin-top: 0;
+    color: #004eff;
+    font-family: 'IstokWeb-Bold', sans-serif;
+    margin-bottom: 1vw;
+}
+
+h4 {
+    font-size: 2.5vw;
+    margin-top: 0;
+    color: #004eff;
+    font-family: 'IstokWeb-Bold', sans-serif;
+    margin-bottom: 1vw;
+}
+
+h5 {
+    color: #ffffff;
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+    background: none;
+}
+
+/* Section: Accueil */
+#ac {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2vw;
+    padding: 1vw;
+}
+
+span {
+    font-family: 'IstokWeb-Bold', sans-serif;
+    font-size: 2vw;
+    color: #66a3ff;
+    margin-top: 0;
+    margin-bottom: 2vw;
+}
+
+.boutton-header {
+    margin-top: 2vw;
+    display: flex;
+    gap: 1.5vw;
+    flex-wrap: wrap;
+}
+
+.boutton-header a,
+.boutton-header button {
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-weight: 700;
+    padding: 0.9vw 1.4vw;
+    font-size: 1.2vw;
+    border-radius: 0.7vw;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-color: white;
+    color: #004eff;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.boutton-header a:hover,
+.boutton-header button:hover {
+    background-color: #004eff;
+    color: white;
+    transition: background-color 2s;
+}
+.presentation{
+    padding-top: 120px;
+}
+
+.photo {
+    flex: 1 1 40vw;
+    width: 40vw;
+    height: 40vw;
+    background: url(../photo/Dany1.png) no-repeat center/cover;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #004eff;
+}
+
+/* À propos */
+#propos {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    display: flex;
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+
+.description {
+    flex: 2 1 50vw;
+    font-size: 1.5vw;
+    text-align: justify;
+    line-height: 1.5;
+    position: relative;
+    left: -100vw;
+    transition: left 1s;
+}
+
+.description_scroll {
+    left: 0;
+}
+
+/* Section compétences*/
+
+#competences {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2vw;
+    justify-content: space-evenly;
+    background-color: #141213;
+    padding: 2vw 2vw;
+    border-radius: 4vw;
+    box-shadow: 0 0 10px #004eff inset;
+    -webkit-box-shadow: 0 0 10px #004eff inset;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+ul {
+    background: none;
+}
+
+li {
+    background: none;
+    font-size: 1.5vw;
+}
+
+/* Projets */
+#projet {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2vw;
+    justify-content: space-evenly;
+}
+
+.flip-container {
+    perspective: 1000px;
+    width: 32vw;
+    min-height: 32vw;
+    cursor: pointer;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 2.5vw;
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2.8vw;
+}
+
+.back {
+    background-color: #141213;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.back .titre {
+    font-weight: bold;
+    font-size: 1.7vw;
+    margin-bottom: 2vw;
+    text-align: center;
+    background: none;
+}
+
+.back .detaille {
+    font-size: 1.4vw;
+    flex-grow: 1;
+    margin-bottom: 2vw;
+    text-align: justify;
+    line-height: 1.4;
+    background: none;
+}
+
+.back .voir_plus {
+    position: absolute;
+    bottom: 1.8vw;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.5vw;
+    border: none;
+    padding: 1vw 2vw;
+    background: white;
+    color: #004eff;
+    font-weight: bold;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.back .voir_plus:hover {
+    background: #004eff;
+    color: white;
+}
+
+/* Contact */
+#contact {
+    margin-bottom: 6vw;
+}
+
+.formulaire {
+    flex: 1 1 35vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    background-color: #111111;
+    padding: 2vw;
+    border-radius: 1vw;
+}
+
+input,
+textarea {
+    padding: 1vw;
+    border-radius: 0.8vw;
+    border: 1.5px solid #004eff;
+    background: #000;
+    color: white;
+    font-size: 1.3vw;
+    font-family: 'Bodonitown', sans-serif;
+    resize: none;
+}
+
+textarea {
+    height: 15vw;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #666;
+    font-size: 1.2vw;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #66a3ff;
+    box-shadow: 0 0 10px #66a3ff;
+    transition: 0.3s;
+}
+
+#contact button {
+    padding: 1vw;
+    background: #004eff;
+    border: none;
+    border-radius: 1vw;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3vw;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact button:hover {
+    background: #ffffff;
+    color: #004eff;
+}
+
+/* Footer */
+footer {
+    background-color: #111111;
+    text-align: center;
+    padding: 1.5vw 1vw;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 300;
+    box-shadow: inset 0 1px 3px #004eff;
+}
+
+.footer {
+    margin-bottom: 1vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    background: none;
+}
+
+.footer a {
+    background: none;
+}
+
+.footer a img {
+    filter: brightness(1);
+    transition: filter 0.4s;
+    background: none;
+}
+
+.footer a img:hover {
+    filter: brightness(0.6) drop-shadow(0 0 5px #004eff);
+    border-radius: 50%;
+}
+
+#copyright {
+    background: none;
+}
+
+/* Animation fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*btn top*/
+#btnTop {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+#btnTop:hover {
+    opacity: 1;
+}
+
+#btnTop img {
+    background: transparent;
+}
