@@ -41,7 +41,7 @@ body {
 .logo {
     width: 7vw;
     height: 7vw;
-    background: url(./logo/logo1.jpg) no-repeat center/cover;
+    background: url('./logo/logo1.jpg') no-repeat center/cover;
     border-radius: 50%;
 }
 
@@ -175,7 +175,7 @@ span {
     flex: 1 1 40vw;
     width: 40vw;
     height: 40vw;
-    background: url(./photo/Dany1.png) no-repeat center/cover;
+    background: url('./photo/Dany1.png') no-repeat center/cover;
     border-radius: 50%;
     box-shadow: 0 0 30px #004eff;
 }
