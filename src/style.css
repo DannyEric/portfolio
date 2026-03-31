@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Bodonitown';
-    src: url('./font/Bodonitown.ttf');
+    src: url('/font/Bodonitown.ttf');
 }
 
 @font-face {
     font-family: 'IstokWeb-Bold';
-    src: url('./font/IstokWeb-Bold.ttf');
+    src: url('/font/IstokWeb-Bold.ttf');
 }
 
 @font-face {
     font-family: 'IstokWeb-Regular';
-    src: url('./font/IstokWeb-Regular.ttf');
+    src: url('/font/IstokWeb-Regular.ttf');
 }
 
 * {

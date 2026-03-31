@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Bodonitown';
-    src: url('./font/Bodonitown.ttf');
+    src: url('/font/Bodonitown.ttf');
     font-family: 'IstokWeb-Bold';
-    src: url('./font/IstokWeb-Bold.ttf');
+    src: url('/font/IstokWeb-Bold.ttf');
 }
 
 @media all and (max-width : 600px) {
@@ -16,7 +16,7 @@
     .logo {
         width: 14vw;
         height: 14vw;
-        background: url('./logo/logo1.jpg') no-repeat center/cover;
+        background: url('/logo/logo1.jpg') no-repeat center/cover;
         border-radius: 50%;
     }
 
@@ -159,7 +159,7 @@
         margin: 4vw auto;
         width: 100%;
         height: 350px;
-        background: url('./photo/Dany1.png') no-repeat center/cover;
+        background: url('/photo/Dany1.png') no-repeat center/cover;
         border-radius: 0% !important;
         box-shadow: none;
     }
