@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="version_mobile.css">
+  <link rel="stylesheet" href="version_tablette.css">
+  <link rel="stylesheet" href="version_pc_réduit.css">
+  <title>Portfolio RALADSON Dany Eric</title>
+  <script src="typed.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navigation" id="top">
+      <div class="logo"></div>
+      <button class="btn-menu">
+        <img src="./new_icône/icons8_Menu_64px.png" alt="" class="menu" height="50px" width="50px" hidden>
+      </button>
+      <nav class="cacher">
+        <a href="#ac">Accueil</a>
+        <a href="#propos">À propos</a>
+        <a href="#skill">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#contacts">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="ac" class="fade-in">
+      <div class="presentation">
+        <h1>BONJOUR,</h1>
+        <h4 class="nom">Je m'appelle <strong>RALADSON Dany Eric</strong></h4>
+        <span id="typed"></span>
+
+        <div class="boutton-header">
+          <a href="/ressources/CV_RALADSON_DANY_ERIC.pdf" class="monCv" title="Télécharger mon CV">Télécharger mon CV</a>
+          <button title="Projets sur Git">Voir mes Projets</button>
+        </div>
+      </div>
+      <div class="photo">
+      </div>
+    </section>
+
+    <section id="propos" class="fade-in">
+      <div class="description">
+        <p>
+          Étudiant curieux et motivé, j’ai acquis des compétences solides en programmation (Java, C++, JavaScript),
+          développement web (HTML/CSS) et gestion de bases de données avec MySQL.
+          Je maîtrise également les méthodes de conception UML et Merise, et je commence à me former au développement
+          mobile avec Flutter.
+          Mon intérêt pour la cybersécurité me pousse
+          à approfondir mes connaissances en sécurité
+          des systèmes, gestion des vulnérabilité et cryptographie.
+          Ambitieux et déterminé, mon objectif
+          est de devenir un expert en
+          cybersécurité, en développant des
+          logicielles robustes tout en garantissant
+          la sécurité des systèmes informatiques
+          et des données sensible.
+        </p>
+      </div>
+    </section>
+
+    <h2 id="skill" class="fade-in">Compétences</h2>
+
+    <section id="competences" class="container fade-in">
+
+      <ul>
+
+        <h5>💻 Langages de programmation</h5>
+        <li>Java</li>
+        <li>C++</li>
+        <li>JavaScript</li>
+      </ul>
+
+
+      <ul>
+        <h5>🌐 Développement web</h5>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+
+
+      <ul>
+        <h5>🛢️ Base de données</h5>
+        <li>MySQL</li>
+      </ul>
+
+
+      <ul>
+        <h5>📱 Développement mobile</h5>
+        <li>Dart</li>
+        <li>Flutter</li>
+      </ul>
+
+      <ul>
+
+        <h5>📐 Modélisation & conception</h5>
+        <li>UML</li>
+        <li>Merise</li>
+      </ul>
+
+
+      <ul>
+        <h5>🛠️ Autres</h5>
+        <li>Git / GitHub (bases)</li>
+        <li>Responsive design (notions)</li>
+      </ul>
+
+    </section>
+
+    <h2 id="projets" class="fade-in">Mes projets</h2>
+
+    <section id="pj" class="fade-in">
+      <div id="projet">
+        <div class="flip-container" onclick="flipCard(this)">
+          <div class="card">
+            <div class="card-face front">
+              <img src="/photo/Bureau.jpg" alt="" title="cliquer pour voir les détailles">
+            </div>
+            <div class="card-face back">
+              <p class="titre">👥 PayTrack</p>
+              <p class="detaille">
+                PayTrack est un logiciel que j'ai développé pour l'entreprise informatique 3Dev. Il permet
+                d'enregistrer les paiements, de
+                faciliter le suivi des flux de trésorerie et de mesurer l'évolution économique de l'entreprise,
+                offrant ainsi une gestion
+                financière plus efficace et transparente.
+              </p>
+              <button class="voir_plus" title="voir">Voir plus</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-container" onclick="flipCard(this)">
+          <div class="card">
+            <div class="card-face front">
+              <img src="/photo/acteDeNaissance.jpg" alt="" title="cliquer pour voir les détailles">
+            </div>
+            <div class="card-face back">
+              <p class="titre">📝 Générateur d'Actes de Naissance</p>
+              <p class="detaille">
+                Projet en binôme : Évaluation en langage de programmation Java. Nous avons développé un logiciel
+                capable de
+                générer automatiquement un acte de naissance pour un nouveau-né, simplifiant ainsi la création
+                et la
+                gestion de
+                documents administratifs.
+              </p>
+              <button class="voir_plus" title="voir">Voir plus</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-container" onclick="flipCard(this)">
+          <div class="card">
+            <div class="card-face front">
+              <img src="/photo/illistration.jpg" alt="" title="cliquer pour voir les détailles">
+            </div>
+            <div class="card-face back">
+              <p class="titre">🖥️ Programme de Manipulation de Matrices Développé en C++</p>
+              <p class="detaille">
+                Ce programme, développé en C++, permet de réaliser des opérations matricielles telles que
+                l'addition, la soustraction
+                et la multiplication entre deux matrices. Conçu en suivant les principes de la Programmation
+                Orientée Objet (POO), il
+                offre une structure modulaire et facilement extensible pour des fonctionnalités.
+              </p>
+              <button class="voir_plus" title="voir">Voir plus</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-container" onclick="flipCard(this)">
+          <div class="card">
+            <div class="card-face front">
+              <img src="/photo/client.png" alt="" title="cliquer pour voir les détailles">
+            </div>
+            <div class="card-face back">
+              <p class="titre">📱 Application mobile de gestion de notes</p>
+              <p class="detaille">
+                Application Flutter permettant à un utilisateur de créer, modifier, supprimer et organiser ses
+                idées
+                sous
+                forme de notes avec base locale.
+              </p>
+              <button class="voir_plus" title="voir">Voir plus</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <h2 id="contacts" class="fade-in">Contact</h2>
+
+    <section id="contact" class="fade-in">
+      <div id="contact">
+        <div class="formulaire">
+          <form action="mailto:raladsondanyeric@gmail.com" method="POST" enctype="text/plain" id="contactForm">
+            <input type="text" name="nom" id="nom" placeholder="Nom" required />
+            <input type="email" name="email" id="email" placeholder="Email" required />
+            <input type="text" name="objet" id="objet" placeholder="Objet" required />
+            <textarea name="message" id="message" placeholder="Message" required></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <button id="btnTop"><img src="/new_icône/icons8_Sort_Up_50px_1.png" alt="" width="35px" height="35px"></button>
+  <!-- <a href="#top" id="btnTop"><img src="../new_icône/icons8_Sort_Up_50px_1.png" alt="" width="35px" height="35px"></a> -->
+  <footer>
+    <div class="footer">
+      <a href="#" aria-label="Facebook"><img src="/new_icône/facebook.png" alt="Facebook" /></a>
+      <a href="#" aria-label="Whatsapp"><img src="/new_icône/whatsapp.png" alt="Whatsapp" /></a>
+      <a href="#" aria-label="GitHub"><img src="/new_icône/github.png" alt="GitHub" /></a>
+      <a href="#" aria-label="LinkedIn"><img src="/new_icône/linkedin.png" alt="LinkedIn" /></a>
+    </div>
+    <p id="copyright">&copy; RD 2025. Tous droits réservés</p>
+  </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
